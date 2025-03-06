@@ -1,4 +1,4 @@
-from dataaccess.comentario_dao import agregar_comentario, obtener_comentarios, eliminar_comentario
+from app.dataaccess.comentario_dao import agregar_comentario, obtener_comentarios, eliminar_comentario
 
 def agregar_comentario_bo(usuario_id, entidad_id, entidad_tipo, contenido):
     try:

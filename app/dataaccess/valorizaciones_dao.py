@@ -1,4 +1,4 @@
-from dataaccess.firebase_db import db
+from app.dataaccess.firebase_db import db
 
 def agregar_valorizacion(ruc, id_usuario, estrellas):
     """Guarda una valoración de una empresa en Firestore."""

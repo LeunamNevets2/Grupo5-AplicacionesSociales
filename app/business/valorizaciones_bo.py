@@ -1,4 +1,4 @@
-from dataaccess.valorizaciones_dao import agregar_valorizacion, obtener_promedio_valorizaciones
+from app.dataaccess.valorizaciones_dao import agregar_valorizacion, obtener_promedio_valorizaciones
 
 def agregar_valorizacion_bo(ruc, id_usuario, estrellas):
     """Lógica de negocio para agregar una valorización."""

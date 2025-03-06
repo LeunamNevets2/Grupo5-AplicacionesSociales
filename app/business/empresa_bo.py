@@ -1,7 +1,7 @@
 # business/empresa_service.py
 import uuid
-from entity.empresa import Empresa
-from dataaccess.empresa_dao import registrar_empresa
+from app.entity.empresa import Empresa
+from app.dataaccess.empresa_dao import registrar_empresa
 
 def crear_empresa(nombre, ruc, direccion, telefono, categoria, propietario_id, validada_sunat):
     empresa_id = str(uuid.uuid4())  # Generar un ID único

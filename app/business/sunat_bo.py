@@ -1,6 +1,6 @@
 import uuid
-from entity.sunatRuc import RespuestaSunat
-from entity.sunatRucResponse import EmpresaDTO
+from app.entity.sunatRuc import RespuestaSunat
+from app.entity.sunatRucResponse import EmpresaDTO
 
 def convertir_a_dto(empresa_api: RespuestaSunat) -> EmpresaDTO:
     return EmpresaDTO(

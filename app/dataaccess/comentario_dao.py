@@ -1,4 +1,4 @@
-from dataaccess.firebase_db import db
+from app.dataaccess.firebase_db import db
 from datetime import datetime
 from google.cloud import firestore
 import pytz

@@ -1,19 +1,19 @@
 import requests
 from flask import Blueprint, request, jsonify
-from business.usuario_bo import crear_usuario
-from business.empresa_bo import crear_empresa
-from business.sunat_bo import convertir_a_dto
-from entity.sunatRuc import RespuestaSunat
-from entity.sunatActividadRuc import RespuestaSunatActividadRUC
-from entity.sunatRepresentanteLegal import SunatRepresentanteLegalResponse
-from business.comentario_bo import agregar_comentario_bo, obtener_comentarios_bo, eliminar_comentario_bo
-from business.valorizaciones_bo import agregar_valorizacion_bo, obtener_promedio_valorizaciones_bo
+from app.business.usuario_bo import crear_usuario
+from app.business.empresa_bo import crear_empresa
+from app.business.sunat_bo import convertir_a_dto
+from app.entity.sunatRuc import RespuestaSunat
+from app.entity.sunatActividadRuc import RespuestaSunatActividadRUC
+from app.entity.sunatRepresentanteLegal import SunatRepresentanteLegalResponse
+from app.business.comentario_bo import agregar_comentario_bo, obtener_comentarios_bo, eliminar_comentario_bo
+from app.business.valorizaciones_bo import agregar_valorizacion_bo, obtener_promedio_valorizaciones_bo
 
 
 API_URL_EMPRESA = "https://api.migo.pe/api/v1/ruc"
 API_URL_REPRESENTANTE_LEGAL = "https://api.migo.pe/api/v1/ruc/representantes-legales"
 API_URL_ACTIVIDAD = "https://api.migo.pe/api/v1/ruc/actividad/{}?token={}"
-API_TOKEN = "00Su75fRCsiWN8shpNppig6dUMelM4hUAv5kUaNrsLGi47C8jAD8OqJU8X37" 
+API_TOKEN = "HwmzUgPStEVSsZ3P19zyYEk8UeA1rDFkIDuJWdg5BOKlJYj47vH0wIhFHr6l" 
 
 routes = Blueprint("routes", __name__)
 

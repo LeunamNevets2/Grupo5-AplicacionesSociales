@@ -1,7 +1,7 @@
 # business/user_service.py
 import uuid
-from entity.usuario import User
-from dataaccess.usuario_dao import registrar_usuario
+from app.entity.usuario import User
+from app.dataaccess.usuario_dao import registrar_usuario
 
 def crear_usuario(nombre, email, telefono, tipo_usuario, fcm_token):
     user_id = str(uuid.uuid4())  # Generar un ID único
